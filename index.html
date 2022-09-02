@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+            darkMode: 'class',
+            thema: {
+                spacing: {
+                    13: '3.25rem',
+                },
+          
+            },
+        };
+
+    </script>
+    <title>belajar tailwind css</title>
+    <style type="text/tailwindcss">
+      #toogle:checked ~ label div.toogle-circle {
+        @apply translate-x-4;
+      }
+    </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+
+
+    <h1 class="text-8xl font-bold text-center my-10 "><span class="dark:text-slate-500 dark:bg-slate-400 bg-gradient-to-r from-red-300 via-blue-400 to-yellow-300 bg-clip-text dark:text-transparent"> Mari Belajar </span> <span class="bg-gradient-to-r from-red-500 via-blue-500 to-green-500 bg-clip-text text-transparent">Tailwind Css</span></h1>
+
+<section class="mb-10 bg-gradient-to-r from-red-300 via-blue-300 to-emerald-500">
+    <h2 class="text-2xl text-center ">Spacing</h2>
+    <div class="m-8 ">Margin</div>
+    <div class="py-8 ">Padding</div>
+</section>
+
+<section class="mb-10 bg-gradient-to-br from-green-600 via-pink-300 to-orange-500">
+    <h2 class="text-2xl text-center">Sizing</h2>
+    <div class="w-32 h-32 bg-red-600 ">Kotak</div>
+</section>
+
+<section class="mb-16 font-serif max-w-xl mx-auto">
+<h2 class="mb-2 text-4xl font-bold ">Belajar Mengenai Typography Pada Tailwind CSS</h2>
+<div class="mb-4 text-gray-500">By <a href="#" class="text-gray-800">Mohammad Arrovy Firmansyah</a>, 25 Agustus 2022</div>
+<p class="mb-4">
+    Lorem ipsum dolor sit, amet <a href="#" class="underline font-semibold text-blue-700">consectetur</a> adipisicing elit. Porro earum praesentium assumenda numquam sint ea mollitia nam ratione explicabo saepe quaerat temporibus molestias quidem repellendus voluptas officiis eveniet nisi, odit impedit architecto? Delectus sed numquam consequatur officia minima hic recusandae magni in, eos aperiam tempora aliquid quis repellendus maxime aut.
+</p>
+<blockquote class="mb-4 italic font-mono font-thin text-xl">
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto id in accusamus doloremque earum placeat quis quam assumenda. Blanditiis, sequi."
+</blockquote>
+<p class="mb-4 bg-gradient-to-r from-red-7000 via-yellow-400 to-blue-400 bg-clip-text text-transparent">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis suscipit autem, ut asperiores fugiat non, nulla et vitae consequuntur inventore deserunt quis quasi maiores iusto iste vel, eveniet animi eius.
+</p>
+
+<div class="max-w-xl h-96 bg-[#bada55] overflow-y-scroll bg-auto bg-cover" style="background-image: url(/img/1.png);">
+    <p class="p-5 text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia porro debitis eligendi ullam incidunt. Tempore, voluptatum voluptates reiciendis temporibus saepe ipsa culpa. Distinctio earum labore sapiente, accusamus laudantium ducimus cupiditate adipisci facere temporibus quis incidunt repudiandae dicta, doloribus obcaecati numquam provident optio quaerat quos eaque! Earum beatae quo sit quibusdam voluptatem voluptates nulla rem facere quam sed repellat nam, blanditiis id ipsa ut dolore iure, alias officiis. Fuga ullam consequatur autem aliquam, dolorem veniam inventore voluptatibus aperiam illo voluptatem veritatis eligendi cupiditate temporibus a corporis molestias libero quos eveniet earum omnis maxime vel officiis. Dolor sunt, fugiat dolorem similique alias nobis, numquam nemo voluptas repellat ab aperiam quis eos animi error rerum, sit atque saepe laborum dolorum doloribus. Illum atque, eveniet ea voluptatibus, iure expedita laborum culpa modi quae ut odit ex hic quod libero suscipit voluptate saepe velit sint autem, ab perspiciatis qui dolores error. Quas earum mollitia dicta odio quos fugit provident atque nisi aspernatur ullam? Nisi officiis laborum consectetur molestiae pariatur nulla suscipit officia, numquam doloremque incidunt illo, natus esse laboriosam laudantium nihil quos totam harum dolorem ipsum sit. Itaque quam assumenda architecto aut nisi doloribus? Distinctio impedit accusamus natus libero, veniam incidunt minus recusandae exercitationem labore.</p>
+</div>
+
+<div class=" mt-32 max-w-xl h-96 bg-[#bada55]  bg-scrool bg-contain bg-no-repeat bg-center rounded-2xl border-8 border-red-600 shadow-xl shadow-blue-500 opacity-90 " style="background-image: url(/img/8.png);">
+<div class="w-full h-full bg-blue-200 mix-blend-darken"></div>
+</div>
+</section>
+
+
+<hr class="my-12">
+
+
+<div class="flex justify-center">
+    <span class="mr-2 text-slate-500 text-sm">Light</span>
+    <input type="checkbox" id="toogle" class="hidden">
+    <label for="toogle">
+        <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-[2px] cursor-pointer ">
+            <div class="w-4 h-4 bg-slate-200 rounded-full toogle-circle"></div>
+        </div>
+    </label>
+    <span class="ml-2 text-slate-500 text-sm">dark</span>
+</div>
+
+
+
+
+<button class="my-10 bg-sky-400 px-5 py-3 rounded-full text-white font-semibold block mx-auto hover:bg-sky-500 active:bg-sky-600 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-800 dark:hover:bg-white dark:hover:active:bg-slate-400
+dark:hover:focus:ring-slate-500">Simpan</button>
+
+<div class="max-w-lg my-10 border border-slate-200 rounded-xl block mx-auto p-5 shadow-md font-sans hover:bg-sky-500 group dark:hover:bg-slate-300">
+    <h5 class="text-slate-700 font-bold mb-3 text-lg group-hover:text-white group-hover:text-slate-800">My Card</h5>
+    <p class="text-slate-600 group-hover:text-white selection:bg-yellow-200 selection:text-gray-900 first-line:underline first-line:tracking-widest first-letter:text-7xl first-letter:float-left mr-3 group-hover:text-slate-800  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aperiam fuga earum unde. Commodi non voluptates sunt tempora, sapiente quibusdam labore odit corporis aliquam itaque eaque laboriosam cumque harum rem.</p>
+</div>
+
+<div class="max-w-lg border border-slate-200 my-10 block mx-auto rounded-xl shadow-md p-5 font-sans">
+  <form action="">
+    <label for="email">
+        <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+        <input type="email" id="email" placeholder="Masukan Email..." class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:sky-700 focus:border-sky-700 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer dark:bg-slate-800 ">
+
+        <p class="text-sm text-pink-700 m-1 invisible peer-invalid:visible dark:font-bold">Onii chan, Onee Chan Email Nya Ada Yang Salah :(</p>
+  </form>
+
+</div>
+
+
+<hr class="my-20">
+
+
+<div class="w-40 h-40 mx-auto group ">
+    
+    <div class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:scale-125 group-hover:rotate-180
+    group-hover:origin-top-left group-active:rounded-full group-active:origin-bottom-right 
+    transition duration-1000 ease-linear delay-500 "></div>
+
+</div>
+
+<div class="w-40 h-40 bg-pink-500 mx-auto mt-20 rounded-lg animate-pulse hover:animate-spin active:animate-bounce cursor-pointer"></div>
+
+
+<hr class="my-20 border-t-4">
+
+<div class="container px-8 mx-auto">
+<div class="px-5 border rounded-lg shadow-lg p-10 relative
+">
+<div class="w-10 h-10 bg-pink-400 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2"><a href="#" class="text-xl m-auto">❌</a></div>
+<img src="./img/5.png" alt="lumine" class="w-40 float-left mr-3 rounded-lg">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam quod dignissimos culpa similique excepturi ratione neque eveniet atque molestias cumque nisi eum, vel minima dolorum ipsa. Saepe non officiis cum molestias ex dolor omnis, dolorum iure, fugit facere rem a sequi inventore totam atque sit tempore maiores tenetur veritatis?</p>
+</div>
+
+<div class="px-5 border rounded-lg shadow-lg p-10 relative mt-14
+">
+<div class="w-10 h-10 bg-pink-400 rounded-full flex absolute -top-5 -right-5"><a href="#" class="text-xl m-auto">❌</a></div>
+<img src="./img/3.png" alt="lumine" class="w-40 float-left mr-3 rounded-lg">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam quod dignissimos culpa similique excepturi ratione neque eveniet atque molestias cumque nisi eum, vel minima dolorum ipsa. Saepe non officiis cum molestias ex dolor omnis, dolorum iure, fugit facere rem a sequi inventore totam atque sit tempore maiores tenetur veritatis?</p>
+</div>
+
+<div class="px-5 border rounded-lg shadow-lg p-10 relative mt-14
+">
+<div class="w-10 h-10 bg-pink-400 rounded-full flex absolute -top-5 -left-5"><a href="#" class="text-xl m-auto">❌</a></div>
+<img src="./img/4.png" alt="lumine" class="w-40 float-left mr-3 rounded-lg">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi totam quod dignissimos culpa similique excepturi ratione neque eveniet atque molestias cumque nisi eum, vel minima dolorum ipsa. Saepe non officiis cum molestias ex dolor omnis, dolorum iure, fugit facere rem a sequi inventore totam atque sit tempore maiores tenetur veritatis?</p>
+</div>
+
+<div class="w-10 h-10 bg-sky-400 rounded-full flex fixed bottom-5 right-5"><a href="#" class="text-xl m-auto">⬆</a>
+</div>
+
+<div class="container mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
+    <img src="./img/1.png" alt="anime" class="mb-4">
+    <img src="./img/2.png" alt="anime" class="mb-4">
+    <img src="./img/3.png" alt="anime" class="mb-4">
+    <img src="./img/4.png" alt="anime" class="mb-4">
+    <img src="./img/5.png" alt="anime" class="mb-4">
+    <img src="./img/6.png" alt="anime" class="mb-4">
+</div>
+
+
+</div> 
+
+
+
+<div class="mb-96"> </div>
+
+<script>
+    const checkbox = document.querySelector('#toogle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function() {
+        checkbox.checked ? html.classList.add ('dark') : html.classList.remove('dark');
+    } )
+    
+
+</script>
+
+</body>
+
+
+
+</html>
